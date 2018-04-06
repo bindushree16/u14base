@@ -1,0 +1,27 @@
+
+jobs:
+ - name: scala-test
+   type: runSh
+   steps:
+     - TASK:
+         runtime:
+           options:
+             imageName: "drydock/u14"
+             imageTag: master
+         script:
+           - gcloud version
+           - terraform --version
+           - packer --version
+           - git --version
+           - kubectl version
+           - kops version
+           - helm version 
+           - doctl version
+           - ansible --version
+           - pip show boto
+           - pip show boto3
+           - pip show apache-libcloud
+           - pip show azure
+           - pip show dopy
+           - zip -v
+
