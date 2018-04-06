@@ -1,6 +1,6 @@
 
 jobs:
- - name: scala-test
+ - name: u14base-test
    type: runSh
    steps:
      - TASK:
