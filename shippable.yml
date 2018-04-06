@@ -13,7 +13,7 @@ jobs:
            - terraform --version
            - packer --version
            - git --version
-           - kubectl version
+           - kubectl version --client
            - kops version
            - helm version 
            - doctl version
