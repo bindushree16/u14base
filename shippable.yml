@@ -15,7 +15,7 @@ jobs:
            - git --version
            - kubectl version --client
            - kops version
-           - helm version 
+           - helm version --client
            - doctl version
            - ansible --version
            - pip show boto
